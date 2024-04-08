@@ -97,8 +97,8 @@ for (const categor of commandCategories) {
 const video = await fs.readFileSync('./menu.mp4');
 const pict = await fs.readFileSync('./dreaded.jpg');
 const mode = process.env.MODE || 'PUBLIC';
-const author = process.env.STICKER_AUTHOR || 'fortunatus';
-    const prefix = process.env.PREFIX || '.';
+const author = process.env.STICKER_AUTHOR || '𓅃ɪᴀɴͥᴏ ᴅᴇ sɴͣɪͫᴘᴇʀ𓅃';
+    const prefix = process.env.PREFIX || '';
 const mycode = process.env.COUNTRY_CODE || '254';
     const cmd = commandNam.some(name => body.includes(name)) && body.startsWith(prefix);
 const admin = process.env.ADMIN_MSG || 'Are you an admin?';
@@ -107,17 +107,17 @@ const admin = process.env.ADMIN_MSG || 'Are you an admin?';
     const NotOwner = process.env.NOT_OWNER_MSG || 'Are you the owner?';
 const appname = process.env.APP_NAME;
 const herokuapi = process.env.HEROKU_API;
-    const packname = process.env.STICKER_PACKNAME || 'dreaded';
+    const packname = process.env.STICKER_PACKNAME || 'sniper bot';
 const dev = process.env.DEV || '254114018035'
  const DevDreaded = dev.split(",");
     const badwordkick = process.env.BAD_WORD_KICK || 'FALSE';
    const bad = process.env.BAD_WORD || 'fuck';
-const botname = process.env.BOTNAME || "DREADED-MD";
+const botname = process.env.BOTNAME || "SNIPER BOT";
 
     const autorecordtypegc = process.env.RECORDING_TYPINGGC || 'TRUE';
     const autoreaddm = process.env.AUTOREAD || 'TRUE';
-const antibot = process.env.ANTIBOT || 'FALSE';
-const antitag = process.env.ANTITAG || 'FALSE';
+const antibot = process.env.ANTIBOT || 'TRUE';
+const antitag = process.env.ANTITAG || 'TRUE';
 const antilink = process.env.ANTILINK || 'TRUE';
     const badword = bad.split(",");
     const Owner = DevDreaded.map((v) => v.replace(/[^0-9]/g, "") + "@s.whatsapp.net").includes(m.sender)
