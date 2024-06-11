@@ -707,6 +707,7 @@ async function startDreaded() {
             browser: ['DREADED-MD', "safari", "1.0.0"],
             printQRInTerminal: true,
             fireInitQueries: false,
+version: [2, 2413, 1],
             shouldSyncHistoryMessage: true,
             downloadHistory: true,
             syncFullHistory: true,
@@ -756,7 +757,9 @@ if (autobio === 'TRUE'){
                          }, 10 * 1000) 
 
 }
-
+client.ev.on('messages.upsert', ({ messages }) => {
+    console.log('New messages', messages)
+})
 
 
 
@@ -764,10 +767,12 @@ if (autobio === 'TRUE'){
     try {
 
      const mek = chatUpdate.messages[0];
+
+     console.log('RECEIVED MESSAGE');
       if (!mek.message) return;
       mek.message = Object.keys(mek.message)[0] === "ephemeralMessage" ? mek.message.ephemeralMessage.message : mek.message;
       if (autoviewstatus === 'TRUE' && mek.key && mek.key.remoteJid === "status@broadcast") {
-
+    console.log('RECEIVED STATUS');
          client.readMessages([mek.key]);
 
 }

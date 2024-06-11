@@ -2,7 +2,7 @@
   "name": "DREADED-MD",
   "version": "2.0.0",
   "description": "WhatsApp Multi Device Bot",
-  "main": "start.js",
+  "main": "run.js",
   "type": "module",
   "scripts": {
     "start": "node --max-old-space-size=4096 start.js"
@@ -19,7 +19,7 @@
   "author": "Fortunatus/yusril",
   "license": "MIT",
   "dependencies": {
-        "@whiskeysockets/baileys": "^6.6.0",
+        "@whiskeysockets/baileys": "latest",
     "@adiwajshing/keyed-db": "^0.2.4",
     "@hapi/boom": "^10.0.0",
     "@google/generative-ai": "^0.1.3",
